@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Contact Form</h1>
+  <%= form_for @contact do |f| %>
+    <div class="col-md-6">
+      <%= f.label :email %></br>
+      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+
+      <%= f.submit 'envoyer votre email', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
